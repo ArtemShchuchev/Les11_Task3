@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(Task3)
+add_library(DynamicLibrory SHARED DynamicLibrory/Leaver.h DynamicLibrory/Leaver.cpp)
+add_executable(MyProgramm MyProgramm/MyProgramm.cpp)
+target_link_libraries(MyProgramm DynamicLibrory)
