@@ -1,6 +1,6 @@
-#include "Leaver.h"
+﻿#include "Leaver.h"
 
-std::string Leaver::leave(std::string s)
+std::wstring Leaver::leave(std::wstring& s)
 {
-    return (LEAVE_STR + s + "!");
+    return (LEAVE_STR + s + L"!");
 }

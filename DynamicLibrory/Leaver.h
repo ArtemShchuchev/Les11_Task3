@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <iostream>
 
 #ifdef DynamicLibrory_EXPORTS
@@ -10,7 +10,7 @@
 class Leaver
 {
 private:
-	const std::string LEAVE_STR = "До свидания, ";
+	const std::wstring LEAVE_STR = L"До свидания, ";
 public:
-	LEAVERDYNAMIC_API std::string leave(std::string);
+	LEAVERDYNAMIC_API std::wstring leave(std::wstring&);
 };

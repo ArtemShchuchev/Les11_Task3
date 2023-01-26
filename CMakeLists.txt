@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+п»їcmake_minimum_required(VERSION 3.10)
 project(Task3)
 add_library(DynamicLibrory SHARED DynamicLibrory/Leaver.h DynamicLibrory/Leaver.cpp)
 add_executable(MyProgramm MyProgramm/MyProgramm.cpp)
@@ -6,8 +6,8 @@ target_link_libraries(MyProgramm DynamicLibrory)
 
 
 # if (Visual Studio)
-# настраиваю в качестве запускаемого проекта
-# настройка на стандарт с++17
+# РЅР°СЃС‚СЂР°РёРІР°СЋ РІ РєР°С‡РµСЃС‚РІРµ Р·Р°РїСѓСЃРєР°РµРјРѕРіРѕ РїСЂРѕРµРєС‚Р°
+# РЅР°СЃС‚СЂРѕР№РєР° РЅР° СЃС‚Р°РЅРґР°СЂС‚ СЃ++17
 if(MSVC)
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT MyProgramm)
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++17")
