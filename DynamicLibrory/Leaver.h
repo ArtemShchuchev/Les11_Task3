@@ -10,7 +10,7 @@
 class Leaver
 {
 private:
-	const std::string LEAVE_STR = "До свидания, ";
+	const std::string LEAVE_STR = "Р”Рѕ СЃРІРёРґР°РЅРёСЏ, ";
 public:
 	LEAVERDYNAMIC_API std::string leave(std::string);
 };
