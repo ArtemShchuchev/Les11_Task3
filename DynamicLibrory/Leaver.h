@@ -3,7 +3,7 @@
 
 #if __GNUC__ >= 4
 
-#define EXPORT __attribute__((visibility("default")))
+#define LEAVERDYNAMIC_API __attribute__((visibility("default")))
 #define IMPORT __attribute__((visibility("hidden")))
 
 #else
@@ -22,5 +22,5 @@ class Leaver
 private:
 	const std::wstring LEAVE_STR = L"До свидания, ";
 public:
-	EXPORT std::wstring leave(std::wstring&);
+	LEAVERDYNAMIC_API std::wstring leave(std::wstring&);
 };
